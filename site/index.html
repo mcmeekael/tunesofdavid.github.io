@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en-NG">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08090b">
+  <meta name="description" content="Tunes of David connects musicians with employers across Nigeria. Find instrument-specific gigs, discover musicians, and plan bookings with clear rules.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://tunesofdavid.com/">
+  <link rel="icon" type="image/png" href="assets/tunes-of-david-logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tunes of David | Find your next gig">
+  <meta property="og:description" content="A home for musicians, live gigs, and the people who need great music.">
+  <meta property="og:url" content="https://tunesofdavid.com/">
+  <meta property="og:image" content="https://tunesofdavid.com/assets/tunes-of-david-logo.png">
+  <title>Tunes of David | Find your next gig</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js"></script>
+  <script src="app.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Tunes of David",
+    "url": "https://tunesofdavid.com/",
+    "description": "A marketplace concept connecting musicians with musical jobs and employers in Nigeria."
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announcement">
+    <span class="announcement-dot" aria-hidden="true"></span>
+    <span>A better connection between talent and opportunity</span>
+    <span class="announcement-separator">/</span>
+    <span class="announcement-muted">Built for Nigeria's music scene</span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Tunes of David home">
+      <img class="brand-logo" src="assets/tunes-of-david-logo.png" alt="Tunes of David microphone and headphones logo">
+      <span class="brand-copy"><strong>TUNES OF DAVID</strong><small>THE MUSIC GIG NETWORK</small></span>
+    </a>
+    <button class="mobile-menu-button" id="mobile-menu-button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span><span></span></button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="#gigs">Explore gigs</a>
+      <a href="#musicians">For employers</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#rules">Platform rules</a>
+    </nav>
+    <div class="header-actions">
+      <button class="button button-quiet button-small" data-open-auth="login">Log in</button>
+      <button class="button button-gold button-small" data-open-auth="register">Join the network <span aria-hidden="true">↗</span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-shell" id="top">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> GOOD MUSIC. BETTER CONNECTIONS.</div>
+        <h1>Your talent deserves<br><span>the right stage.</span></h1>
+        <p class="hero-lede">Find musical gigs that fit your craft. Connect with dependable talent. Make every performance count.</p>
+        <div class="hero-actions">
+          <a class="button button-gold button-large" href="#gigs">Explore available gigs <span aria-hidden="true">↗</span></a>
+          <button class="button button-outline button-large" data-open-auth="register">I'm hiring musicians</button>
+        </div>
+        <div class="hero-proof-row">
+          <div class="proof-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 10-4-2.5-7-5.5-7-10V6l7-3z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg></div>
+          <p><strong>Clear expectations.</strong><span>Specialty-specific matching and transparent gig rules.</span></p>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-stats" aria-label="Platform highlights">
+          <div><strong>01</strong><span>Find gigs by craft</span></div>
+          <div><strong>02</strong><span>Review before booking</span></div>
+          <div><strong>03</strong><span>Plan around schedules</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Tunes of David brand artwork">
+        <div class="hero-orbit hero-orbit-one"></div>
+        <div class="hero-orbit hero-orbit-two"></div>
+        <div class="visual-glow"></div>
+        <img class="hero-logo" src="assets/tunes-of-david-logo.png" alt="Tunes of David metallic microphone and headphones emblem">
+        <div class="visual-caption"><span class="live-pulse"></span><span>THE STAGE IS CALLING</span><span class="caption-rule"></span></div>
+        <div class="floating-note floating-note-top"><span class="note-icon">♫</span><span><strong>More opportunities</strong><small>One network</small></span></div>
+        <div class="floating-note floating-note-bottom"><span class="note-signal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span><strong>Your craft comes first</strong><small>Match by specialty</small></span></div>
+      </div>
+    </section>
+
+    <section class="quick-search section-shell" aria-labelledby="search-title">
+      <div class="search-intro"><span class="section-kicker">START YOUR SEARCH</span><h2 id="search-title">Make the next move.</h2></div>
+      <form class="search-form" id="gig-search-form">
+        <label class="search-field"><span class="field-icon" aria-hidden="true">⌕</span><span class="field-stack"><span class="field-label">What do you play?</span><select id="specialty-filter" name="specialty"><option value="">All specialties</option><option>Bass Guitarist</option><option>Keyboardist</option><option>Drummer</option><option>Lead Guitarist</option><option>Saxophonist</option><option>Trumpeter</option><option>Singer</option><option>Percussionist</option></select></span></label>
+        <label class="search-field"><span class="field-icon" aria-hidden="true">⌖</span><span class="field-stack"><span class="field-label">Where's the gig?</span><input id="location-filter" name="location" type="search" placeholder="City or area"></span></label>
+        <button class="button button-gold search-submit" type="submit">Search gigs <span aria-hidden="true">→</span></button>
+      </form>
+      <p class="demo-note"><span aria-hidden="true">ⓘ</span> Preview listings are examples only, not confirmed job offers.</p>
+    </section>
+
+    <section class="section section-shell gigs-section" id="gigs">
+      <div class="section-heading-row">
+        <div><span class="section-kicker">OPPORTUNITIES, IN TUNE</span><h2>Find a gig that fits <span>your sound.</span></h2><p class="section-description">Search work by instrument and location. Only matching specialties should see each gig.</p></div>
+        <a class="text-link" href="#how-it-works">How matching works <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="listing-toolbar"><div class="listing-status"><span class="status-pip"></span><span id="gig-results-label">Illustrative gig previews</span></div><label class="sort-label" for="sort-gigs">Sort by <select id="sort-gigs"><option value="recommended">Recommended</option><option value="pay-high">Highest pay</option><option value="date">Soonest date</option></select></label></div>
+      <div class="gig-grid" id="gigs-grid" aria-live="polite"></div>
+      <div class="empty-state hidden" id="gigs-empty"><div class="empty-note">♫</div><h3>No matching preview gigs</h3><p>Try another specialty or location.</p><button type="button" class="button button-outline" id="clear-filters">Clear filters</button></div>
+      <div class="section-bottom-cta"><p>Have a performance to fill?</p><button class="button button-dark" data-open-post-gig>Post a musical gig <span aria-hidden="true">↗</span></button></div>
+    </section>
+
+    <section class="section spotlight-section" id="musicians">
+      <div class="section-shell spotlight-layout">
+        <div class="spotlight-copy"><span class="section-kicker">FOR EMPLOYERS & EVENT PLANNERS</span><h2>Find the sound.<br><span>Build the moment.</span></h2><p>Find musicians by the instrument you need, check their public performance profile, and review their track record before accepting an application.</p>
+          <div class="spotlight-benefits"><div><span class="check-mark">✓</span><span><strong>Skill-video review</strong><small>Video approval is reviewed by authorised admins.</small></span></div><div><span class="check-mark">✓</span><span><strong>Public ratings, private reviewers</strong><small>Review feedback without exposing an employer's identity.</small></span></div><div><span class="check-mark">✓</span><span><strong>Schedule-aware bookings</strong><small>Conflicting accepted bookings should be declined.</small></span></div></div>
+          <button class="button button-gold button-large" data-open-post-gig>Start hiring <span aria-hidden="true">↗</span></button>
+        </div>
+        <div class="profile-preview-panel">
+          <div class="panel-topline"><span class="panel-title">MUSICIAN DIRECTORY</span><span class="preview-pill">SAMPLE VIEW</span></div>
+          <div class="directory-card"><div class="avatar avatar-gold">BG</div><div class="directory-main"><strong>Sample profile</strong><span>Bass Guitarist · Lagos</span><small>Profile preview — not a real musician</small></div><span class="profile-arrow" aria-hidden="true">↗</span></div>
+          <div class="directory-card"><div class="avatar avatar-silver">KY</div><div class="directory-main"><strong>Sample profile</strong><span>Keyboardist · Abuja</span><small>Profile preview — not a real musician</small></div><span class="profile-arrow" aria-hidden="true">↗</span></div>
+          <div class="directory-card"><div class="avatar avatar-bronze">DR</div><div class="directory-main"><strong>Sample profile</strong><span>Drummer · Port Harcourt</span><small>Profile preview — not a real musician</small></div><span class="profile-arrow" aria-hidden="true">↗</span></div>
+          <div class="panel-foot"><span class="panel-shield" aria-hidden="true">✓</span><span>Verification status should only appear after the real review process.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-shell how-section" id="how-it-works">
+      <div class="section-heading-centered"><span class="section-kicker">THE PROCESS, MADE CLEAR</span><h2>From first note to <span>final applause.</span></h2><p>Designed to make expectations visible before anyone commits to a gig.</p></div>
+      <div class="steps-grid">
+        <article class="step-card"><span class="step-number">01</span><div class="step-symbol">♬</div><h3>Build your profile</h3><p>Musicians add their specialty, contact, performance video, preferred name and payout details through secure registration.</p><span class="step-line"></span></article>
+        <article class="step-card"><span class="step-number">02</span><div class="step-symbol">⌕</div><h3>Find the right match</h3><p>Employers describe the gig, location, GPS coordinates, schedule and budget. Musicians see only work matching their craft.</p><span class="step-line"></span></article>
+        <article class="step-card"><span class="step-number">03</span><div class="step-symbol">◷</div><h3>Confirm the schedule</h3><p>Applications need a conflict check. Once accepted, a booking should reserve that musician's time automatically.</p><span class="step-line"></span></article>
+        <article class="step-card"><span class="step-number">04</span><div class="step-symbol">✦</div><h3>Perform & review</h3><p>After the event, the employer leaves a rating and review. Payments and any penalties are handled through a verified payment system.</p><span class="step-line"></span></article>
+      </div>
+    </section>
+
+    <section class="section money-section" id="rules">
+      <div class="section-shell money-layout">
+        <div class="money-copy"><span class="section-kicker">FEES & FAIR PLAY</span><h2>Know the rules<br><span>before the gig.</span></h2><p>These are the operating rules specified for the platform concept. Live collection, refunds, fines and payouts must be implemented by a secure payment backend before they can be enforced.</p><a href="#policy-details" class="text-link">Read the key rules <span aria-hidden="true">↓</span></a></div>
+        <div class="money-cards" id="policy-details">
+          <article class="money-card"><span class="money-icon">₦</span><div><strong>₦2,000+</strong><span>Minimum gig payment</span><p>Plus a separate ₦1,000 penalty reserve paid by the employer.</p></div></article>
+          <article class="money-card"><span class="money-icon">↺</span><div><strong>48 hours</strong><span>Cancellation deadline</span><p>A gig can only be cancelled at least two days before it starts.</p></div></article>
+          <article class="money-card"><span class="money-icon">1%</span><div><strong>Platform fee</strong><span>Owner's service fee</span><p>The specified platform charge is 1% of the gig payment.</p></div></article>
+          <article class="money-card"><span class="money-icon">10%</span><div><strong>Gig poster share</strong><span>Musician-posted gigs</span><p>The specified 10% share applies to the payment, not the extra reserve.</p></div></article>
+        </div>
+      </div>
+      <div class="section-shell rules-strip">
+        <div><span class="rule-number">30 min</span><span class="rule-copy">Grace period in the stated arrival/commencement rules</span></div>
+        <div><span class="rule-number">₦1,000</span><span class="rule-copy">Specified late-arrival deduction and employer reserve</span></div>
+        <div><span class="rule-number">₦5,000</span><span class="rule-copy">Specified no-show fine for a musician who accepted a gig</span></div>
+      </div>
+    </section>
+
+    <section class="section section-shell join-section">
+      <div class="join-card"><div class="join-decor" aria-hidden="true">♫</div><div class="join-content"><span class="section-kicker">YOUR NEXT CHAPTER STARTS HERE</span><h2>Let's put more music <span>into the world.</span></h2><p>Join as a musician, find the talent you need, or manage the platform through the correct authorised account.</p></div><div class="join-actions"><button class="button button-gold button-large" data-open-auth="register">Join Tunes of David <span aria-hidden="true">↗</span></button><button class="button button-outline button-large" data-open-auth="login">Member login</button></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-shell footer-top"><a class="brand footer-brand" href="#top"><img class="brand-logo" src="assets/tunes-of-david-logo.png" alt=""><span class="brand-copy"><strong>TUNES OF DAVID</strong><small>THE MUSIC GIG NETWORK</small></span></a><p>Good music brings people together.<br>We help the right people find each other.</p><div class="footer-links"><a href="#gigs">Explore gigs</a><a href="#how-it-works">How it works</a><a href="#rules">Fees & rules</a><a href="privacy.html">Privacy notice</a><a href="terms.html">Terms of use</a></div></div>
+    <div class="section-shell footer-bottom"><span>© <span id="current-year">2026</span> Tunes of David. All rights reserved.</span><span class="footer-demo"><span class="status-pip"></span> Preview mode · No real bookings or payments</span></div>
+  </footer>
+
+  <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+
+  <div class="modal-backdrop hidden" id="auth-modal" role="presentation">
+    <section class="auth-modal" role="dialog" aria-modal="true" aria-labelledby="auth-modal-title" aria-describedby="auth-modal-description">
+      <button class="modal-close" id="close-auth" type="button" aria-label="Close dialog">×</button>
+      <div class="modal-brand-row"><img src="assets/tunes-of-david-logo.png" alt=""><span>Tunes of David</span></div>
+      <div class="modal-intro"><span class="section-kicker">YOUR MUSIC NETWORK</span><h2 id="auth-modal-title">Welcome to the stage.</h2><p id="auth-modal-description">Choose an account type to continue. This package is in preview mode.</p></div>
+      <div class="auth-mode-tabs" role="tablist" aria-label="Account type">
+        <button class="auth-tab active" type="button" role="tab" aria-selected="true" data-auth-tab="musician">Musician</button>
+        <button class="auth-tab" type="button" role="tab" aria-selected="false" data-auth-tab="employer">Employer</button>
+        <button class="auth-tab" type="button" role="tab" aria-selected="false" data-auth-tab="admin">Admin</button>
+      </div>
+      <div class="auth-action-tabs"><button type="button" class="auth-action active" data-auth-action="login">Log in</button><button type="button" class="auth-action" data-auth-action="register">Create account</button></div>
+      <div class="preview-warning"><span aria-hidden="true">ⓘ</span><span><strong>Preview only.</strong> Do not enter real NIN, bank details, passwords or PINs. No information is submitted or saved by this demo.</span></div>
+      <form id="login-form" class="auth-form">
+        <label class="form-field" id="login-identity-label"><span>Email, phone or NIN</span><input id="login-identity" name="identity" autocomplete="username" placeholder="Enter your registered details" required></label>
+        <label class="form-field" id="login-secret-label"><span>4-digit login PIN</span><input id="login-secret" name="secret" autocomplete="current-password" type="password" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" placeholder="••••" required></label>
+        <button class="text-link forgot-link" type="button" id="forgot-password">Forgotten password?</button>
+        <button class="button button-gold button-full" type="submit">Continue securely <span aria-hidden="true">→</span></button>
+        <p class="form-footnote">Forgotten access should be recovered through a verified email flow after the backend is connected.</p>
+      </form>
+      <form id="musician-register-form" class="auth-form hidden">
+        <div class="form-row"><label class="form-field"><span>Legal name (from verified ID)</span><input name="legalName" autocomplete="name" placeholder="Your verified name" required></label><label class="form-field"><span>Stage name (optional)</span><input name="stageName" placeholder="Your stage name"></label></div>
+        <label class="form-field"><span>National Identification Number (NIN)</span><input name="nin" inputmode="numeric" maxlength="11" placeholder="11-digit NIN" required></label>
+        <div class="form-row"><label class="form-field"><span>Email address</span><input name="email" type="email" autocomplete="email" placeholder="you@example.com" required></label><label class="form-field"><span>Active phone number</span><input name="phone" type="tel" autocomplete="tel" placeholder="+234 …" required></label></div>
+        <label class="form-field"><span>Primary specialty</span><select name="specialty" required><option value="">Choose your instrument</option><option>Bass Guitarist</option><option>Keyboardist</option><option>Drummer</option><option>Lead Guitarist</option><option>Saxophonist</option><option>Trumpeter</option><option>Singer</option><option>Percussionist</option></select></label>
+        <label class="form-field"><span>Profile photo (optional)</span><input name="avatar" type="file" accept="image/*"><small class="field-help">A profile image is not uploaded in preview mode.</small></label>
+        <label class="form-field"><span>Performance proof video (minimum 1 minute)</span><input name="skillVideo" type="file" accept="video/*" required><small class="field-help">Video duration and upload must be checked securely on the server in production.</small></label>
+        <div class="form-row"><label class="form-field"><span>Bank name</span><input name="bankName" placeholder="Your bank" required></label><label class="form-field"><span>Bank account number</span><input name="bankAccount" inputmode="numeric" maxlength="20" placeholder="Account number" required></label></div>
+        <label class="form-field"><span>Create a 4-digit login PIN</span><input name="pin" type="password" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" placeholder="4 digits" required></label>
+        <label class="check-field"><input type="checkbox" required><span>I agree to the gig rules, schedule checks and attendance policy.</span></label>
+        <button class="button button-gold button-full" type="submit">Create musician profile <span aria-hidden="true">→</span></button>
+      </form>
+      <form id="employer-register-form" class="auth-form hidden">
+        <label class="form-field"><span>Email address</span><input name="email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
+        <label class="form-field"><span>Create a password</span><input name="password" type="password" autocomplete="new-password" minlength="10" placeholder="At least 10 characters" required></label>
+        <label class="check-field"><input type="checkbox" required><span>I understand that gigs must be paid for before publishing, including the separate penalty reserve.</span></label>
+        <button class="button button-gold button-full" type="submit">Continue to email verification <span aria-hidden="true">→</span></button>
+        <p class="form-footnote">A real backend must send and verify a one-time code by email.</p>
+      </form>
+      <p class="modal-bottom-note">By continuing, you agree to follow the published gig rules. Secure account creation is not active in preview mode.</p>
+    </section>
+  </div>
+
+  <div class="modal-backdrop hidden" id="gig-modal" role="presentation">
+    <section class="gig-modal auth-modal" role="dialog" aria-modal="true" aria-labelledby="gig-modal-title">
+      <button class="modal-close" id="close-gig" type="button" aria-label="Close dialog">×</button>
+      <span class="section-kicker">GIG PREVIEW</span><h2 id="gig-modal-title">Gig details</h2><div id="gig-modal-content"></div>
+      <div class="gig-modal-actions"><button class="button button-gold button-full" id="gig-modal-apply" type="button">Apply for this gig <span aria-hidden="true">→</span></button><p>Sample listing only. Applications are not sent from preview mode.</p></div>
+    </section>
+  </div>
+
+  <div class="modal-backdrop hidden" id="post-gig-modal" role="presentation">
+    <section class="gig-modal auth-modal" role="dialog" aria-modal="true" aria-labelledby="post-gig-title">
+      <button class="modal-close" id="close-post-gig" type="button" aria-label="Close dialog">×</button>
+      <span class="section-kicker">CREATE A GIG REQUEST</span><h2 id="post-gig-title">Tell us what your event needs.</h2>
+      <p class="gig-detail-description">Fill in the required fields to preview a gig request. This form does not publish a real job or take payment.</p>
+      <div class="preview-warning"><span aria-hidden="true">ⓘ</span><span><strong>Preview only.</strong> Do not enter private venue access codes or sensitive information. Live posting requires an authorised account and confirmed payment.</span></div>
+      <form id="post-gig-form" class="auth-form">
+        <label class="form-field"><span>Gig title</span><input name="title" maxlength="120" placeholder="e.g. Bass guitarist for wedding reception" required></label>
+        <label class="form-field"><span>Specialty required</span><select name="specialty" required><option value="">Choose the instrument / craft</option><option>Bass Guitarist</option><option>Keyboardist</option><option>Drummer</option><option>Lead Guitarist</option><option>Saxophonist</option><option>Trumpeter</option><option>Singer</option><option>Percussionist</option></select></label>
+        <label class="form-field"><span>Musician payment (NGN)</span><input name="payment" type="number" inputmode="numeric" min="2000" step="100" placeholder="Minimum ₦2,000" required><small class="field-help">A separate ₦1,000 penalty reserve is also specified by the platform rules. Payment must settle before publishing.</small></label>
+        <div class="form-row"><label class="form-field"><span>Venue / location name</span><input name="venue" maxlength="120" placeholder="Event venue" required></label><label class="form-field"><span>City / area</span><input name="city" maxlength="100" placeholder="e.g. Ikeja, Lagos" required></label></div>
+        <label class="form-field"><span>Full gig address</span><input name="address" maxlength="220" placeholder="Street, area and city" required></label>
+        <div class="form-row"><label class="form-field"><span>GPS latitude</span><input name="latitude" type="number" step="any" min="-90" max="90" placeholder="e.g. 6.6018" required></label><label class="form-field"><span>GPS longitude</span><input name="longitude" type="number" step="any" min="-180" max="180" placeholder="e.g. 3.3515" required></label></div>
+        <div class="form-row"><label class="form-field"><span>Starting date & time</span><input name="startsAt" type="datetime-local" required></label><label class="form-field"><span>Ending date & time</span><input name="endsAt" type="datetime-local" required></label></div>
+        <label class="form-field"><span>More event details</span><textarea name="description" rows="3" maxlength="1200" placeholder="Set list, equipment, dress code, sound check or other expectations" required></textarea></label>
+        <label class="check-field"><input type="checkbox" required><span>I understand that the gig is only published after payment confirmation and that the cancellation cutoff is 48 hours before the event.</span></label>
+        <button class="button button-gold button-full" type="submit">Preview gig request <span aria-hidden="true">→</span></button>
+      </form>
+      <div id="post-gig-preview-result" class="hidden"></div>
+    </section>
+  </div>
+
+</body>
+</html>
